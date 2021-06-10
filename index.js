@@ -54,7 +54,7 @@ const questions = [
         type: 'list',
         message: 'Choose a license for this project: ',
         name: 'license',
-        choices: ['Apache', 'IBM', 'Mozilla', 'Eclipse'],
+        choices: ['Apache', 'MIT', 'GNU GPLv3', 'Mozilla'],
       },
 ];
 

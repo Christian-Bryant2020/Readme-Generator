@@ -2,16 +2,16 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   switch (license) {
-    case 'Mozilla Public License 2.0':
+    case 'Mozilla':
       licenseBadge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
       return licenseBadge;
     case 'GNU GPLv3':
       licenseBadge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
       return licenseBadge;
-    case 'MIT License':
+    case 'MIT':
       licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
       return licenseBadge;
-    case 'Apache License 2.0':
+    case 'Apache':
       licenseBadge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
       return licenseBadge;
     default:
@@ -24,16 +24,16 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   switch(license){
-    case 'Mozilla Public License 2.0':
+    case 'Mozilla':
       licenseLink = `https://opensource.org/licenses/MPL-2.0`;
       return licenseLink;
     case 'GNU GPLv3':
       licenseLink = `https://www.gnu.org/licenses/gpl-3.0`;
       return licenseLink;
-    case 'MIT License':
+    case 'MIT':
       licenseLink = `https://opensource.org/licenses/MIT`;
       return licenseLink;
-    case 'Apache License 2.0':
+    case 'Apache':
       licenseLink = `https://opensource.org/licenses/Apache-2.0`;
       return licenseLink;
     default:
@@ -46,16 +46,16 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   switch(license){
-    case 'Mozilla Public License 2.0':
+    case 'Mozilla':
       licenseSection = `Licensed under the ${data.license}; You may obtain a copy of the License at https://opensource.org/licenses/MPL-2.0`;
       return licenseSection;
     case 'GNU GPLv3':
       licenseSection = `Licensed under the ${data.license}; You may obtain a copy of the License at https://www.gnu.org/licenses/gpl-3.0`;
       return licenseSection;
-    case 'MIT License':
+    case 'MIT':
       licenseSection = `Licensed under the ${data.license}; You may obtain a copy of the License at https://opensource.org/licenses/MIT`;
       return licenseSection;
-    case 'Apache License 2.0':
+    case 'Apache':
       licenseSection = `Licensed under the ${data.license}; You may obtain a copy of the License at https://opensource.org/licenses/Apache-2.0`;
       return licenseSection;
     default:
