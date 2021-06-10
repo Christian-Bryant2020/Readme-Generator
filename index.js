@@ -62,15 +62,16 @@ const questions = [
 function init() {
     inquirer.prompt(questions)
     .then((response) => {
-        generateMarkdown(response);
-        return response;
+        generateMarkdown.renderLicenseBadge(response);
+        generateMarkdown.renderLicenseLink(response);
+        generateMarkdown.renderLicenseSection(response);
+         return response;
     })
 
     // inputs the data from the license and user prompt and returns a filled out and formatted readme
     .then((data) => {
-        // returns markdownTemplate variable
-        generateMarkdown(data)
-        return markdownTemplate
+        generateMarkdown.generateMarkdown(data, licenseBadge, licenseSection)
+        return template
     })
     
     // writes the readme data to a readme file named generatedReadme.md
